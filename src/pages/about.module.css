@@ -119,9 +119,10 @@ html{
 .cardContent {
     background: linear-gradient(to top, rgb(10, 10, 10) -15%, rgb(215, 213, 213) 97.7%);
     /* height: auto; */
-    padding: 1.5rem 0 5rem 1rem;
+    padding: 1rem 0 1rem 1rem;
     font-size: 1.5rem;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 .item1 {
