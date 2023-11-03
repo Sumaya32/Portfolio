@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+    font-family: "Garamond", "Franklin Gothic", "Goudy Old Style";
+
+}
+
+html{
+    height: 100%;
+}
+ body {
+    background-image: url('/public/background5.webp');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    padding: 0;
+    height: 100%;
+    /* background-color: aqua; */
+
+}
+
+.container {
+    background-color: black;
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+/* margin-top: 3%; */
+position: relative;
+}
+
+.sectionOne {
+    margin-top: 5rem;
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.textMiniContainer {
+    background-color: rgb(215, 213, 213);
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    width: 80%;
+}
+
+.imageContainer {
+    text-align: center;
+    height: 100%;
+    animation-name: imageAnimation;
+    animation-duration: 5s;
+    z-index: 0;
+}
+
+.image {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.sectionTwo {
+    background-color: red;
+    margin-top: 1rem;
+    width: 90%;
+    height: 70vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+}
+
+
+/*Animation*/
+@keyframes imageAnimation {
+    from {
+        transform: translate(-36vw)
+    }
+
+    to {
+        transform: translate(0vw);
+        opacity: 1;
+    }
+}
+
+
+/*Media*/
+@media only screen and (max-width: 820px) {
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .textContainer {
+        max-height: auto;
+    }
+
+    .textMiniContainer {
+        height: 95%;
+        width: 80%;
+    }
+
+    .imageContainer {
+        animation-name: imageAnimationslideUp;
+        animation-duration: 5s;
+
+        height: 50%;
+    }
+
+    .image {
+        height: 95%;
+        width: 80%;
+    }
+}
+
+
+/*Animation*/
+@keyframes imageAnimationslideUp {
+    from {
+        transform: translateY(-35vh)
+    }
+
+    to {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
