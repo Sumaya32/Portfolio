@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./../components/header";
+import Layout from "./../components/layout"
 import image from "./../assets/myImage.jpg";
 import styles from "./index.module.css";
 
 export const Home = () => {
     return (
-        <div className={styles.container}>
-            <Header/>
+            <Layout>
             <div className={styles.sectionOne} id="/">
 
                 <div className={styles.textContainer}>
@@ -23,8 +22,6 @@ export const Home = () => {
                     <img src={image} className={styles.image} alt="me standing in belcony with aan amezing view"/>
                 </div>
             </div>
-            
-        </div>
-    );
-}
+            </Layout>
+    );}
 

@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "./../components/header";
+import Layout from "./../components/layout";
 import styles from "./projects.module.css";
 
 export const Projects = () => {
     return (
-        <div className={styles.container}>
-            <Header />
-            <div className={styles.miniContainer}>
-
+        <Layout>
                 <div className={styles.projectCardsContainer}>
                     <div className={styles.firstProject}>
                         <h3 className={styles.title}>Personal project</h3>
@@ -20,8 +17,7 @@ export const Projects = () => {
                     </div>
 
                 </div>
-            </div>
-        </div>
+                </Layout>
     );
 }
 

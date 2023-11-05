@@ -21,11 +21,14 @@ const Header = () => {
                 <NavLink to="/" className={({ isActive }) => (isActive ? `${styles.active} ${styles.navItem}` : `${styles.navItem}`)} onClick={() => { handleClick(); setToggled(false) }}>
                     Home
                 </NavLink>
-                <NavLink to="/about" className={({ isActive }) => (isActive ? `${styles.active}  ${styles.navItem}` : `${styles.navItem}`)} onClick={() => { handleClick(); setToggled(false) }}>
-                About me
+                <NavLink to="/Resume" className={({ isActive }) => (isActive ? `${styles.active}  ${styles.navItem}` : `${styles.navItem}`)} onClick={() => { handleClick(); setToggled(false) }}>
+                Resume
                 </NavLink>
                 <NavLink to="/projects" className={({ isActive }) => (isActive ? `${styles.active}  ${styles.navItem}` : `${styles.navItem}`)} onClick={() => { handleClick(); setToggled(false) }}>
                 Projects
+                </NavLink>
+                <NavLink to="/Contact" className={({ isActive }) => (isActive ? `${styles.active}  ${styles.navItem}` : `${styles.navItem}`)} onClick={() => { handleClick(); setToggled(false) }}>
+                Contact
                 </NavLink>
                 <button className={`${styles.nav_btn} ${styles.nav_close_btn}`} onClick={showNavbar}>
                     <FaTimes className={styles.faTimes} />
