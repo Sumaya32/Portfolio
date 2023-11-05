@@ -1,23 +1,5 @@
-.container {
-    background-color: black;
-    height: 85vh;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-}
-
-.miniContainer{
-    /* background-color: aquamarine; */
-        height: 75vh;
-        margin-top: 6rem;
-        width: 100%;
-        display: flex;
-        justify-content: center
-}
-
-.firstProject, .secondProject{
+.firstProject,
+.secondProject {
     background-color: aliceblue;
     height: 20%;
     border-radius: 10px;
@@ -25,53 +7,59 @@
     word-wrap: break-word;
 }
 
-.projectCardsContainer{
+.projectCardsContainer {
     display: grid;
     grid-template-columns: repeat(2, 35rem);
     column-gap: 25px;
     justify-content: center;
     width: 80%;
-    /* height: 80%; */
 }
 
-h3{
+h3 {
     font-size: 1.6em;
     padding: 0.3rem;
 }
 
-.linkContainer{
+.linkContainer {
     font-size: 1.2rem;
 }
 
-p{
+p {
     font-weight: bold;
 }
 
-a{
+a {
     text-decoration: none;
     color: gray;
-    
+
 }
 
-a:hover{
-    color:  rgb(183, 7, 7);
+a:hover {
+    color: rgb(183, 7, 7);
 }
 
 
-@media only screen and (max-width: 1360px) {
-    .miniContainer{
+
+/*Media queries*/
+@media only screen and (max-width: 1460px) {
+    .miniContainer {
         height: auto
     }
-    .projectCardsContainer{
-        display: grid;
-        grid-template-columns: repeat(1, 90%);
-        row-gap: 20px;
-        width: 80%;
-        height: 100%;
+
+    .projectCardsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
     }
 
-    .firstProject, .secondProject{
-        height: 100%;
+    .firstProject,
+    .secondProject {
+        height: auto;
         padding: 1rem 0 1rem 0;
+        margin-bottom: 1rem;
+        width: 70%;
+
     }
 }

@@ -1,0 +1,284 @@
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.container {
+    font-family: "Garamond", "Franklin Gothic", "Goudy Old Style";
+    background-color: black;
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+
+}
+
+.miniContainer {
+    height: 70vh;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.cardContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: repeat(4, 70px);
+    grid-gap: 2rem;
+    z-index: 0;
+}
+
+.PersonalDetails {
+    height: auto;
+}
+
+.education {
+    height: auto;
+}
+
+.header {
+    background-color: rgb(215, 213, 213);
+    background-color: aliceblue;
+    ;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.8rem 0 0.8rem 0;
+    border-bottom: 2px solid black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-weight: bolder;
+}
+
+.header:hover {
+    color: white;
+    color: rgb(183, 7, 7);
+
+}
+
+.cardContent {
+    background: linear-gradient(to top, rgb(10, 10, 10) -15%, aliceblue 97.7%);
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.item1 {
+    z-index: 9;
+}
+
+.item2 {
+    z-index: 8
+}
+
+.item3 {
+    z-index: 7
+}
+
+.item4 {
+    z-index: 6
+}
+
+.item5 {
+    z-index: 5
+}
+
+.item6 {
+    z-index: 4
+}
+
+.item7 {
+    z-index: 3
+}
+
+.item8 {
+    z-index: 2
+}
+
+.item9 {
+    z-index: 1;
+}
+
+.item10 {
+    z-index: 0;
+}
+
+.hideCardContent {
+    display: none;
+}
+
+.allCardItems {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.item,
+.value {
+    text-align: left;
+}
+
+.language {
+    width: 20rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+
+}
+
+.languageLevel,
+.languageLevelValue {
+    font-size: 1.4rem;
+}
+
+.competencesCard {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 1520px) {
+    .cardContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(5, 60px);
+        grid-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .miniContainer {
+        background-color: black;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .cardContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 80%);
+        grid-template-rows: repeat(10, 60px);
+        grid-gap: 2rem;
+        z-index: 0;
+        margin-top: 2rem;
+    }
+
+    .space{
+   padding: 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 540px) {
+    .cardContainer {
+        font-size: 0.8rem;
+    }
+
+    .allCardItems {
+        word-wrap: break-word;
+        display: grid;
+        grid-template-columns: repeat(1, 50%);
+        margin-top: 1rem;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item,
+    .value {
+        text-align: center;
+        width: 100%;
+    }
+
+    .value {
+
+        color: rgb(74, 73, 73)
+    }
+
+    .language {
+        font-size: 1.5rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-word;
+        word-break: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        width: auto;
+    }
+
+    .header {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-word;
+        word-break: break-word;
+        width: auto;
+    }
+
+
+    .languageLevelValue {
+        font-size: 1rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+
+    .languageLevel {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .cardContainer {
+        font-size: 0.6rem;
+    }
+
+    .language {
+        font-size: 1.2rem;
+    }
+
+    .languageLevel,
+    .languageLevelValue {
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .cardContainer {
+        font-size: 0.5rem;
+    }
+
+    .language {
+        font-size: 1.2rem;
+    }
+
+    .languageLevel,
+    .languageLevelValue {
+        font-size: 0.9rem;
+
+    }
+
+}

@@ -104,10 +104,8 @@ header .nav_btn {
     }
 
     .headerContaqiner .nav_close_btn {
-        position: absolute;
-        top: 5.7rem;
-        right: 5rem;
-
+        top: 10%;
+        right: 13%;
     }
 
     .navItem {
