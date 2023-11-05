@@ -1,0 +1,148 @@
+.formContainer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LinkedIn {
+    background-color: white;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 7%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px
+}
+
+.LinkedIn:hover {
+    cursor: pointer;
+    background-color: rgb(244, 88, 88);
+}
+
+.LinkedIn a {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.contactHeader {
+    color: rgb(140, 6, 6);
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.border {
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+.input {
+    width: 99%;
+    height: 80%;
+    border: none;
+    border-radius: 30px;
+    border: 5px solid rgb(151, 4, 4);
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+h5 {
+    transform: translatey(50%);
+    width: max-content;
+    background: black;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1.5rem;
+    clear: both;
+    color: white;
+    margin-left: 2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.textarea {
+    height: 100%;
+    padding: 1rem 0 5rem 1rem;
+}
+
+.submitButton {
+    margin-top: 1rem;
+    border-radius: 30px;
+    background-color: rgb(151, 4, 4);
+    padding: 0.5rem 0 0.5rem 0;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 50%;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+.submitButton:hover {
+    color: rgb(151, 4, 4);
+    background-color: white;
+    border: 5px solid rgb(151, 4, 4);
+}
+
+
+/*Media queries*/
+@media only screen and (max-width: 950px) {
+    .submitButton {
+        width: 90%;
+    }
+
+    .LinkedIn {
+        width: 10%;
+        height: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    form {
+        width: 80%;
+    }
+
+    .submitButton {
+        width: 90%;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .LinkedIn {
+        width: 12%;
+        height: 7%;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 280px) {
+    .contactHeader {
+        font-size: 2rem;
+    }
+
+    h5 {
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+}
