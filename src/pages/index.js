@@ -5,6 +5,7 @@ import styles from "./index.module.css";
 
 export const Home = () => {
     return (
+        
         <div className={styles.container}>
             <Header/>
             <div className={styles.sectionOne} id="/">
