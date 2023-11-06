@@ -5,6 +5,10 @@
     border-radius: 10px;
     text-align: center;
     word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .projectCardsContainer {
@@ -20,12 +24,15 @@ h3 {
     padding: 0.3rem;
 }
 
-.linkContainer {
+.projecLinkContainer {
     font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
 }
 
 p {
     font-weight: bold;
+    width: auto
 }
 
 a {
