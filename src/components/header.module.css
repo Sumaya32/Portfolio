@@ -15,7 +15,7 @@ nav {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     list-style: none;
 }
 
@@ -105,7 +105,7 @@ header .nav_btn {
 
     .headerContaqiner .nav_close_btn {
         top: 10%;
-        right: 13%;
+        right: 12%;
     }
 
     .navItem {
@@ -118,18 +118,29 @@ header .nav_btn {
 
 }
 
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .headerContaqiner .nav_close_btn {
+        position: absolute;
+        top: 10%;
+        right: 15%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .headerContaqiner .nav_close_btn {
         position: absolute;
-        top: 5.8rem;
-        right: 4rem;
+        top: 10%;
+        right: 16%;
     }
 }
+
+
 
 @media only screen and (max-width: 400px) {
     .headerContaqiner .nav_close_btn {
         position: absolute;
-        top: 6rem;
-        right: 3rem;
+        top: 10%;
+        right: 18%;
     }
 }

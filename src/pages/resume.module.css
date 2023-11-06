@@ -18,7 +18,7 @@ body {
 
 .miniContainer {
     height: 70vh;
-    margin-top: 6rem;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -169,6 +169,7 @@ body {
         background-color: black;
         height: auto;
         padding-bottom: 2rem;
+        margin-top: 5rem;
     }
 
     .cardContainer {

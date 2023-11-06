@@ -22,7 +22,7 @@ body {
     height: 100%;
 }
 
-.container {
+/* .container {
     background-color: black;
     height: 85vh;
     display: flex;
@@ -31,10 +31,11 @@ body {
     align-items: center;
     width: 80vw;
     position: relative;
-}
+} */
 
 .sectionOne {
-    width: 100%;
+    /* background-color: red; */
+    width: 95%;
     height: 60vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -48,9 +49,8 @@ body {
 }
 
 .textMiniContainer {
-    background-color: rgb(215, 213, 213);
     background-color: aliceblue;;
-    width: 95%;
+    width: 90%;
     height: 85%;
     text-align: center;
     padding-top: 5%;
@@ -82,7 +82,7 @@ body {
 }
 
 .image {
-    width: 95%;
+    width: 90%;
     height: 100%;
     border-radius: 10px;
 }
@@ -101,7 +101,7 @@ body {
 /*Animation*/
 @keyframes imageAnimation {
     from {
-        transform: translate(-36vw)
+        transform: translate(-100vw)
     }
 
     to {
@@ -116,7 +116,7 @@ body {
     .sectionOne {
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
 
     .textContainer {
@@ -131,7 +131,6 @@ body {
     .imageContainer {
         animation-name: imageAnimationslideUp;
         animation-duration: 5s;
-
         height: 50%;
     }
 
