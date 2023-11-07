@@ -7,7 +7,6 @@
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 

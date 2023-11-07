@@ -5,10 +5,9 @@ import styles from "./index.module.css";
 
 export const Home = () => {
     return (
-        
-            <Layout>
-            <div className={styles.sectionOne} id="/">
 
+        <Layout>
+            <div className={styles.container}>
                 <div className={styles.textContainer}>
                     <div className={styles.textMiniContainer}>
                         <div className={styles.title}>Welcome in my website</div>
@@ -20,9 +19,10 @@ export const Home = () => {
                 </div>
 
                 <div className={styles.imageContainer}>
-                    <img src={image} className={styles.image} alt="me standing in belcony with aan amezing view"/>
+                    <img src={image} className={styles.image} alt="me standing in belcony with aan amezing view" />
                 </div>
             </div>
-            </Layout>
-    );}
+        </Layout>
+    );
+}
 

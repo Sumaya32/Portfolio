@@ -22,43 +22,29 @@ body {
     height: 100%;
 }
 
-/* .container {
-    background-color: black;
-    height: 85vh;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    position: relative;
-} */
-
-.sectionOne {
-    /* background-color: red; */
-    width: 95%;
+.container {
+    width: 100%;
     height: 60vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    justify-content: center;
 }
 
 .textContainer {
     display: flex;
     justify-content: center;
-    height: 100%;
-
+    align-items: center;
+    height: 85%;
+    z-index: 1;
 }
 
 .textMiniContainer {
-    background-color: aliceblue;;
-    width: 90%;
-    height: 85%;
-    text-align: center;
+    background-color: aliceblue;
+    width: 95%;
+    height: 95%;
     padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 10px;
-    z-index: 1;
+    text-align: center;
 }
 
 .title {
@@ -68,33 +54,24 @@ body {
 
 .description {
     font-size: 1rem;
+    text-align: center;
     margin-top: 1.5rem;
-    width: 80%;
 }
 
 .imageContainer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 85%;
-
     animation-name: imageAnimation;
-    animation-duration: 5s;
+    animation-duration: 3s;
     z-index: 0;
 }
 
 .image {
-    width: 90%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border-radius: 10px;
-}
-
-.sectionTwo {
-    margin-top: 1rem;
-    width: 90%;
-    height: 70vh;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-
 }
 
 
@@ -113,10 +90,9 @@ body {
 
 /*Media*/
 @media only screen and (max-width: 820px) {
-    .sectionOne {
+    .container {
         display: flex;
         flex-direction: column;
-        /* margin-top: 1rem; */
     }
 
     .textContainer {
@@ -130,7 +106,7 @@ body {
 
     .imageContainer {
         animation-name: imageAnimationslideUp;
-        animation-duration: 5s;
+        animation-duration: 2s;
         height: 50%;
     }
 

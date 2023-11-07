@@ -21,7 +21,6 @@ export const Projects = () => {
                         <a href="https://juba-cocktails.vercel.app/" target="blank">https://juba-cocktails.vercel.app/</a>
                     </div>
                 </div>
-
             </div>
         </Layout>
     );
