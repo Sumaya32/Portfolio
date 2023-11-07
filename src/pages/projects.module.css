@@ -30,8 +30,10 @@ h3 {
 }
 
 p {
+    background-color: aquamarine;
     font-weight: bold;
-    width: auto
+    width: auto; 
+    margin: auto;
 }
 
 a {

@@ -64,7 +64,7 @@ body {
     align-items: center;
     height: 85%;
     animation-name: imageAnimation;
-    animation-duration: 3s;
+    animation-duration: 4s;
     z-index: 0;
 }
 
