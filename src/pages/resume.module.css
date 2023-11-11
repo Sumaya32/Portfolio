@@ -14,11 +14,12 @@ body {
     align-items: center;
     width: 80vw;
    overflow: auto;
+   padding: 3.5rem 0 35rem 0;
 }
 
 .miniContainer {
     height: 70vh;
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 100%;
 }
 
@@ -64,6 +65,7 @@ body {
     padding: 1rem 0 1rem 1rem;
     font-size: 1.5rem;
     width: 100%;
+    margin-bottom: 5rem;
 }
 
 .item1 {
@@ -116,7 +118,6 @@ body {
     grid-template-columns: repeat(2, 45%);
     column-gap: 2rem;
     margin-top: 1rem;
-    width: 100%;
 }
 
 .item,

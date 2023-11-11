@@ -10,7 +10,7 @@ export const Projects = () => {
                     <h3 className={styles.title}>Personal project</h3>
                     <div className={styles.projecLinkContainer}>
                         <p>Taverna Scheldeland</p>
-                        <a a href="https://scheldeland-mwokpu3zf-sumaya32.vercel.app/" target="blank">https://tavernascheldeland.be</a>
+                        <a a href="https://www.tavernescheldeland.be" target="blank">https://tavernascheldeland.be</a>
                     </div>
                 </div>
 
