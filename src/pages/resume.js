@@ -27,7 +27,7 @@ export const Resume = () => {
                         <div className={`${styles.name} ${styles.allCardItems}`}><p className={styles.item}>Name</p><p className={styles.value}>Sumaya</p></div>
                         <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={styles.item}>Last name</p><p className={styles.value}>Mohamed Ahmed</p></div>
                         <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Date of birth</p><p className={styles.value}>17/07/1989</p></div>
-                        <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Place of birth</p><p className={styles.value}>Mogadishu Somalia</p></div>
+                        {/* <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Place of birth</p><p className={styles.value}>Mogadishu Somalia</p></div> */}
                         <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Marital status</p><p className={styles.value}>Single</p></div>
                         <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Nationality</p><p className={styles.value}>Belgium</p></div>
                     </div>
