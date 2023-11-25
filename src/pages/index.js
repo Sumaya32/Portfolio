@@ -15,7 +15,7 @@ export const Home = () => {
 
                             <div className={styles.description}>
                                 <p>
-                                    Hello everyone<br />
+                                    Hello everyone.<br />
                                     My name is Sumaya as you can see from the website’s address.
                                     I’ve just started my journey as a front-end developer. I love designing and coding.
                                 </p>
