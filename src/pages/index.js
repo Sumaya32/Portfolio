@@ -17,7 +17,7 @@ export const Home = () => {
                                 <p>
                                     Hello everyone<br />
                                     My name is Sumaya as you can see from the website’s address.
-                                    I’ve just started my journey as a front-end developer.I love designing and coding.
+                                    I’ve just started my journey as a front-end developer. I love designing and coding.
                                 </p>
                                 <br />
 
