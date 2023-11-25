@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/header";
+import Layout from "./../components/layout"
+
 import styles from "./resume.module.css"
 
 export const Resume = () => {
@@ -16,10 +18,11 @@ export const Resume = () => {
 
 
     return (
-        <div className={styles.container}>
-            <Header/>
-            <div className={styles.miniContainer}>
+        <Layout>
 
+        {/* <div className={styles.container}>
+            <div className={styles.miniContainer}> */}
+<div className={styles.contentContainer}>
             <div className={styles.cardContainer}>
                 <div className={`${styles.PersonalDetails} ${styles.card} ${styles.item1}`}>
                     <h1 className={styles.header} onClick={() => setPersonalDetailsIsVisible(!PersonalDetailsIsVisible)}>Personal details</h1>
@@ -149,9 +152,12 @@ export const Resume = () => {
                 </div>
             </div>
 
+            </div>
+{/* 
         </div>
         <span className={styles.space}></span>
-        </div>
+        </div> */}
+        </Layout>
     );
 }
 

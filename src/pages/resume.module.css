@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 
-.container {
+/* .container {
     font-family: "Garamond", "Franklin Gothic", "Goudy Old Style";
     background-color: black;
     height: 85vh;
@@ -21,8 +21,14 @@ body {
     height: 70vh;
     margin-top: 5rem;
     width: 100%;
-}
+} */
 
+.contentContainer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+}
 .cardContainer {
     width: 100%;
     display: grid;
@@ -56,8 +62,7 @@ body {
 
 .header:hover {
     color: white;
-    color: rgb(183, 7, 7);
-
+    background-color: rgb(160, 2, 2);
 }
 
 .cardContent {
@@ -65,12 +70,12 @@ body {
     padding: 1rem 0 1rem 1rem;
     font-size: 1.5rem;
     width: 100%;
-    margin-bottom: 5rem;
+    /* margin-bottom: 50rem; */
 }
 
 .item1 {
     z-index: 9;
-
+    /* margin-bottom: 50rem;  */
 }
 
 .item2 {
@@ -165,12 +170,14 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
-    .miniContainer {
+    /* .miniContainer {
         background-color: black;
         height: auto;
         padding-bottom: 2rem;
         margin-top: 5rem;
-    }
+    background-color: aqua;
+
+    } */
 
     .cardContainer {
         width: 100%;

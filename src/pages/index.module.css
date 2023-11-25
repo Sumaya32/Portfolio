@@ -26,9 +26,6 @@ body {
     width: 100vw;
     height: 60vh;
     font-family: "Segoe Print", Times, serif;
-    ;
-
-
 }
 
 .miniContentContainer {
@@ -38,7 +35,6 @@ body {
     justify-content: center;
     height: 100%;
     width: 80vw;
-
 }
 
 .textContainer {
@@ -120,7 +116,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2rem 0 2rem 0;
+        /* margin: 0 0 2rem 0; */
         height: auto;
         width: 100%;
     }
@@ -155,7 +151,12 @@ body {
 }
 
 
-
+@media only screen and (max-width: 500px) {
+.description p{
+text-align: center;
+width: 100%;
+}
+}
 /*Animation*/
 @keyframes imageAnimationslideUp {
     from {

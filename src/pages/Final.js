@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout"
-import styles from "./thankyou.module.css";
+import styles from "./final.module.css";
 
 export const Final = () => {
     return (
