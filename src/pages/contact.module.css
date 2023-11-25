@@ -115,17 +115,19 @@ h5 {
 }
 
 @media only screen and (max-width: 540px) {
-    .formContainer{
+    .formContainer {
         /* background-color: aqua; */
         padding-bottom: 1rem;
     }
+
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
-    .submitButton{
+
+    .submitButton {
         margin-top: 0;
     }
 
@@ -164,15 +166,20 @@ h5 {
 
 
 @media only screen and (min-width: 28px) and (max-width: 375px) {
-    .formContainer{
+    .formContainer {
         padding-bottom: 32rem;
     }
+
+    .LinkedIn {
+        margin-right: 1rem;
+    }
+
     /* .LinkedIn {
 
         position: absolute;
         top: 95%;
         left: 0;
-    } */    
+    } */
 }
 
 @media only screen and (max-width: 280px) {
@@ -184,7 +191,7 @@ h5 {
         margin-left: 1rem;
         font-size: 0.8rem;
     }
-    
+
     .LinkedIn {
         width: 9%;
         height: 8%;
