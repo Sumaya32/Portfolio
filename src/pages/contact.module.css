@@ -1,11 +1,10 @@
 .formContainer {
-    /* width: 90%; */
     width: 100%;
-
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
 
 .LinkedIn {
@@ -43,7 +42,6 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 50%;
     height: 100%;
 }
@@ -103,6 +101,18 @@ h5 {
 
 
 /*Media queries*/
+@media only screen and (width: 1024px) {
+    .formContainer {
+        height: fit-content;
+        padding-bottom: 0.2rem;
+    }
+
+    .submitButton {
+        margin-top: -1.2rem;
+    }
+}
+
+
 @media only screen and (max-width: 950px) {
     .submitButton {
         width: 90%;
@@ -114,12 +124,8 @@ h5 {
     }
 }
 
-@media only screen and (max-width: 540px) {
-    .formContainer {
-        /* background-color: aqua; */
-        padding-bottom: 1rem;
-    }
 
+@media only screen and (max-width: 540px) {
     form {
         display: flex;
         flex-direction: column;
@@ -134,14 +140,7 @@ h5 {
 }
 
 
-
-
-
 @media only screen and (max-width: 500px) {
-    /* .formContainer{
-        background-color: aqua;
-    } */
-
     form {
         width: 80%;
     }
@@ -166,20 +165,9 @@ h5 {
 
 
 @media only screen and (min-width: 28px) and (max-width: 375px) {
-    .formContainer {
-        padding-bottom: 32rem;
-    }
-
     .LinkedIn {
         margin-right: 1rem;
     }
-
-    /* .LinkedIn {
-
-        position: absolute;
-        top: 95%;
-        left: 0;
-    } */
 }
 
 @media only screen and (max-width: 280px) {
