@@ -7,7 +7,6 @@ import { Contact } from "./pages/contact";
 import { Final } from "./pages/Final";
 
 function App() {
-  
   return (
     <Routes>
       <Route element={<Home />} path="/" />
