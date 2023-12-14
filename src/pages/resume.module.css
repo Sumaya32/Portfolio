@@ -4,7 +4,7 @@ body {
     height: 100%;
 }
 
-.contentContainer{
+.contentContainer {
     background-color: black;
     width: 100%;
     height: auto;
@@ -48,7 +48,7 @@ body {
 }
 
 .cardContent {
-    background: linear-gradient(to top, rgb(10, 10, 10) -15%, aliceblue 97.7%);
+    background: linear-gradient(to top, rgb(53, 53, 53) -15%, aliceblue 97.7%);
     padding: 1rem 0 1rem 1rem;
     font-size: 1.5rem;
     width: 100%;
@@ -121,12 +121,15 @@ body {
 .languageLevel,
 .languageLevelValue {
     font-size: 1.4rem;
+    color: rgb(44, 44, 44);
 }
+
 
 .competencesCard {
     display: grid;
     grid-template-columns: repeat(1, 100%);
 }
+
 
 .dot {
     height: 10px;
@@ -158,8 +161,8 @@ body {
         margin-top: 2rem;
     }
 
-    .space{
-   padding: 2rem;
+    .space {
+        padding: 2rem;
     }
 }
 
@@ -173,23 +176,28 @@ body {
     .allCardItems {
         word-wrap: break-word;
         display: grid;
-        grid-template-columns: repeat(1, 50%);
+        grid-template-columns: repeat(1, 100%);
         margin-top: 1rem;
-        width: 90%;
+        padding-right: 1rem;
+    }
+
+    .competencesCard {
+        word-wrap: break-word;
+        display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
+    }
+
+    .competencesCard p {
+        text-align: left;
+        margin-left: 1rem;
     }
 
     .item,
     .value {
         text-align: center;
         width: 100%;
-    }
 
-    .value {
-
-        color: rgb(33, 33, 33)
     }
 
     .language {
@@ -215,12 +223,13 @@ body {
 
     .languageLevelValue {
         font-size: 1rem;
-        padding: 0.5rem 0 1rem 0;
     }
 
     .languageLevel {
         font-size: 1.2rem;
     }
+
+
 }
 
 

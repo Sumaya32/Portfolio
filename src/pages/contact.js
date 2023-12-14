@@ -25,7 +25,7 @@ export const Contact = () => {
                     </div>
                     <button type="submit" className={styles.submitButton}>Send</button>
 
-                    <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
+                    <input type="hidden" name="_next" value="https://sumaya.be/#/confirmation"></input>
                     <input type="hidden" name="_subject" value="New submission!"></input>
                     <input type="hidden" name="_captcha" value="false"></input>
                 </form>

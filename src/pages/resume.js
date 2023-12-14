@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/header";
 import Layout from "./../components/layout"
 
@@ -86,12 +86,12 @@ export const Resume = () => {
                     <div className={`${styles.PersonalDetails} ${styles.card} ${styles.item6}`}>
                         <h1 className={styles.header} onClick={() => setLanguageKnowledge(!LanguageKnowledgelsIsVisible)}>Languages knowledge</h1>
                         <div className={LanguageKnowledgelsIsVisible === true ? `${styles.cardContent}` : `${styles.hideCardContent}`}>
-                            <div className={`${styles.name} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.language}`}>Somali (mother tongue)</p><p className={`${styles.value} ${styles.languageLevelValue}`}></p></div>
+                            <div className={`${styles.name} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.language}`}>Somali (mother tongue)</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Speaking</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Fluent</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Writing</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Fluent</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Understanding</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Fluent</p></div>
 
-                            <div className={`${styles.name} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.language}`}>Dutch</p><p className={`${styles.value} ${styles.languageLevelValue}`}></p></div>
+                            <div className={`${styles.name} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.language}`}>Dutch</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Speaking</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Excellent</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Writing</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Good</p></div>
                             <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.languageLevel}`}>Understanding</p><p className={`${styles.value} ${styles.languageLevelValue}`}>Excellent</p></div>
@@ -113,18 +113,21 @@ export const Resume = () => {
                         <div className={workExperienceIsVisible === true ? `${styles.cardContent} ` : `${styles.hideCardContent}`}>
                             <div className={`${styles.name} ${styles.allCardItems}`}><p className={styles.item}>Internship Programming by iCapps</p><p className={styles.value}>February 2023 – June 2023</p></div>
                             <div className={`${styles.name} ${styles.allCardItems}`}><p className={styles.item}>Retail work by Lidl (Permanent contract)</p><p className={styles.value}>April 2015 – present</p></div>
-                            <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={styles.item}>shop assistant (Student job)</p><p className={styles.value}>2013 - 2014</p></div>
+                            <div className={`${styles.lastName} ${styles.allCardItems}`}><p className={styles.item}>Shop assistant (student job)</p><p className={styles.value}>2013 - 2014</p></div>
                             <div className={`${styles.birthDate} ${styles.allCardItems}`}> <p className={styles.item}>Administration by Vollers Belgium (Student job)</p><p className={styles.value}>August 2014</p></div>
                         </div>
                     </div>
 
                     <div className={`${styles.PersonalDetails} ${styles.card}  ${styles.item8}`}>
                         <h1 className={styles.header} onClick={() => setCompetences(!competencesIsVisible)}>Competences</h1>
-                        <div className={competencesIsVisible === true ? `${styles.cardContent} ` : `${styles.hideCardContent}`}>
-                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}><p className={styles.item}><span className={styles.dot}></span> Flexible</p></div>
+                        <div className={competencesIsVisible === true ? `${styles.cardContent} ` : `${styles.hideCardContent} `}>
+                           <div className={styles.competencesCardContainer}>
+                           <div className={`${styles.competencesCard} ${styles.allCardItems}`}><p className={styles.item}><span className={styles.dot}></span> Flexible</p></div>
                             <div className={`${styles.competencesCard} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.competences}`}><span className={styles.dot}></span> Creative</p></div>
-                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Can work well in a team also can perfectly work independently</p></div>
-                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Strong sense of responsibility</p></div>
+                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={`${styles.item } ${styles.competences}`} ><span className={styles.dot}></span> Teamplayer</p></div>
+                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Responsible </p></div>
+                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Reliable </p></div>
+                           </div>
 
                         </div>
                     </div>
@@ -144,7 +147,7 @@ export const Resume = () => {
                             <div className={`${styles.competencesCard} ${styles.allCardItems}`}><p className={styles.item}> <span className={styles.dot}></span> Travel</p></div>
                             <div className={`${styles.competencesCard} ${styles.allCardItems}`}><p className={`${styles.item} ${styles.competences}`}><span className={styles.dot}></span> Gym</p></div>
                             <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Badminton</p></div>
-                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Going out with freinds</p></div>
+                            <div className={`${styles.competencesCard} ${styles.allCardItems}`}> <p className={styles.item}><span className={styles.dot}></span> Going out with friends</p></div>
                         </div>
                     </div>
                 </div>

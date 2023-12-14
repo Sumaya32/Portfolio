@@ -9,8 +9,10 @@ export const Projects = () => {
                 <div className={styles.firstProject}>
                     <h3 className={styles.title}>Personal project</h3>
                     <div className={styles.projecLinkContainer}>
-                        <p>Taverna Scheldeland</p>
-                        <a a href="https://www.tavernescheldeland.be" target="blank">https://tavernascheldeland.be</a>
+                        {/* <p>Taverna Scheldeland</p>
+                        <a a href="https://www.tavernescheldeland.be" target="blank">https://tavernascheldeland.be</a> */}
+                        <p>Temporary link</p>
+                        <a a href="https://scheldeland-git-development-sumaya32.vercel.app/" target="blank">tavernescheldeland</a>
                     </div>
                 </div>
 
