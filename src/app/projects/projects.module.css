@@ -1,0 +1,83 @@
+.container {
+  /* background-image: conic-gradient(black, rgb(21, 27, 58), rgb(0, 0, 0), rgb(0, 0, 0), black); */
+  background-image: conic-gradient(
+    rgb(43, 50, 86),
+    black,
+    rgb(43, 50, 86),
+    black,
+    rgb(43, 50, 86)
+  );
+  /* background-image: conic-gradient(rgb(21, 27, 58),black,rgb(21, 27, 58), black, rgb(21, 27, 58), black, rgb(21, 27, 58)); */
+
+  /* background-image: conic-gradient(rgb(21, 27, 58), black, black, rgb(21, 27, 58)); */
+
+  height: 100vh;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: rgb(34, 0, 255); */
+  height: 100vh;
+  gap: 20px;
+}
+
+.card {
+  margin-top: 5em;
+  background-color: aliceblue;
+  width: 25%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.iframeContainer {
+  width: 100%;
+  /* border-radius: 20px; */
+}
+
+.iframe{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.card {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; 
+        -ms-animation: fadein 5s; 
+         -o-animation: fadein 5s; 
+            animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -1,0 +1,96 @@
+.container {
+  /* background-image: conic-gradient(black, rgb(40, 50, 96), rgb(0, 0, 0), rgb(0, 0, 0), black); */
+  background-image: conic-gradient(
+    black,
+    black,
+    rgb(0, 0, 0),
+    /* rgb(21, 27, 58), */
+    rgb(36, 43, 80),
+    rgb(0, 0, 0)
+  );
+  color: white;
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.miniContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  height: 80vh;
+}
+
+.imageConitainer {
+  width: 50%;
+  margin-left: 0.5rem;
+  height: 80%;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: 90%;
+  margin: 0 auto;
+  border-bottom-left-radius: 20rem;
+}
+
+.textContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 0.5rem;
+  height: 80%;
+  border-radius: 0.3rem;
+}
+
+.text {
+  font-size: 2em;
+  position: relative;
+  width: max-content;
+  max-height: 90%;
+  display: block;
+}
+
+.aboutMe {
+  font-size: 1.5rem;
+  align-self: center;
+  padding: 0;
+  position: relative;
+}
+
+.text::before,
+.text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.text::before {
+  background-color: black;
+  animation: typewriter 2s steps(17) 1s forwards;
+}
+
+.text::after {
+  width: 0.125em;
+  background-color: white;
+  animation: typewriter 2s steps(17) 1s forwards, blink 750ms steps(17) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}

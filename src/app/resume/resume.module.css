@@ -1,0 +1,115 @@
+.container {
+  background-image: conic-gradient(
+    rgb(37, 46, 88),
+    black,
+    rgb(37, 45, 85),
+    black,
+    rgb(38, 46, 88),
+    black,
+    rgb(38, 46, 88)
+  );
+  color: white;
+  height: 100vh;
+  /* width: 100%; */
+}
+
+.cardContainer {
+  /* background-color: aqua; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem 0 rem;
+  position: relative;
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+}
+
+.card {
+   text-align: center;
+   margin: 0 auto;
+   color: black;
+  /* background-color: white; */
+  background-color: rgb(255, 255, 255, 0.7);
+
+  width: 30%;
+  height: 70vh;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.cardOne {
+  /* background-color: gray; */
+  /* position: absolute; */
+  top: 50px;
+  left: 10px;
+  animation: cardOneMove 1s ease-out;
+}
+
+.cardTwoMove {
+  /* background-color: rgb(205, 39, 183); */
+  /* position: absolute; */
+  top: 50px;
+  right: 10px;
+  animation: cardTwoMove 1s ease-out;
+}
+/* .card::before, .card::after{
+position: absolute;
+
+} */
+
+@keyframes cardOneMove {
+  0% {
+    left: 20%;
+    top: 23%;
+    /* opacity: 1 */
+  }
+  100% {
+    top: 50px;
+    left: 10px;
+  }
+}
+
+@keyframes cardTwoMove {
+  0% {
+    right: 20%;
+    top: 23%;
+    /* opacity: 1 */
+  }
+  100% {
+    top: 50px;
+    right: 10px;
+  }
+}
+
+
+@keyframes fadeOut {
+   100% {
+     opacity: 1;
+   }
+   0% {
+     opacity: 0;
+   }
+ }
+ 
+ @-moz-keyframes fadeOut {
+   100% {
+     opacity: 1;
+   }
+   0% {
+     opacity: 0;
+   }
+ }
+ 
+ @-webkit-keyframes fadeOut {
+   100% {
+     opacity: 1;
+   }
+   0% {
+     opacity: 0;
+   }
+ }
