@@ -17,6 +17,7 @@ export default function Contact() {
     if(letterIsOut === false){setTimeout(function() {setLetterIsOut(true)}, 2000);}
     else{setTimeout(function() {setLetterIsOut(false)}, 2); }
    };
+   
   
     return (
 
