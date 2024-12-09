@@ -36,23 +36,20 @@ console.log(patheName)
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div >
           {children}
-          {/* <Header />  */}
           </div>
         </body>
       </html>
     );
   } 
 
-
-
- else if (patheName === "/about") {
+ else if (patheName === "/about" || "/resume" || "/projects" || "/contact") {
     return (
       <html lang="en">
         <title>{metadata.title}</title>
         <meta content={metadata.description} />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div style={{height: "100%", backgroundColor: "black", }}>
+        <div >
         <Header /> 
           {children}
           </div>
@@ -60,77 +57,4 @@ console.log(patheName)
       </html>
     );
   } 
-
-
-//  else if (window.top === window) {
-//     return (
-//       <html lang="en">
-//         <title>{metadata.title}</title>
-//         <meta content={metadata.description} />
-//         <meta name="viewport" content="width=device-width, user-scalable=no" />
-//         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-//         <div style={{height: "100%", backgroundColor: "black", }}>
-//         {/* <Header />  */}
-//           {children}
-//           </div>
-//         </body>
-//       </html>
-//     );
-//   } 
-
-
-
-  else if (patheName === "/resume") {
-    return (
-      <html lang="en">
-        <title>{metadata.title}</title>
-        <meta content={metadata.description} />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div style={{height: "100%", backgroundColor: "black", }}>
-        <Header /> 
-          {children}
-          </div>
-        </body>
-      </html>
-    );
-  } 
-  else if (patheName === "/contact") {
-    return (
-      <html lang="en">
-        <title>{metadata.title}</title>
-        <meta content={metadata.description} />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div style={{height: "100%", backgroundColor: "black", }}>
-        <Header /> 
-          {children}
-          </div>
-        </body>
-      </html>
-    );
-  } 
-  else if (patheName === "/projects") {
-    return (
-      <html lang="en">
-        <title>{metadata.title}</title>
-        <meta content={metadata.description} />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div style={{height: "100%", backgroundColor: "black", }}>
-        <Header /> 
-          {children}
-          </div>
-        </body>
-      </html>
-    );
-  } 
-  else
-    return (
-      <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          {children}
-        </body>
-      </html>
-    );
 }
