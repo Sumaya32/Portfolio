@@ -1,0 +1,22 @@
+.btnContaner{
+    display: flex;
+    gap: 1em;
+    position: relative;
+    top: 33%;
+  }
+  
+  .btn {
+    background-color: rgb(71, 77, 98);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid  white;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .btn:hover{
+    background-color: rgb(106, 109, 122);
+  }
+  
