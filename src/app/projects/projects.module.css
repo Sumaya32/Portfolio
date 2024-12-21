@@ -1,41 +1,13 @@
 .container {
-  /* background-image: conic-gradient(black, rgb(21, 27, 58), rgb(0, 0, 0), rgb(0, 0, 0), black); */
-  /* background-image: conic-gradient(
-    rgb(43, 50, 86),
-    black,
-    rgb(43, 50, 86),
-    black,
-    rgb(43, 50, 86)
-  ); */
-  /* background-image: conic-gradient(rgb(21, 27, 58),black,rgb(21, 27, 58), black, rgb(21, 27, 58), black, rgb(21, 27, 58)); */
-
-  /* background-image: conic-gradient(rgb(21, 27, 58), black, black, rgb(21, 27, 58)); */
-
-  min-height: 100vh !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-background-color: aqua;
-  /* height: 100vh; */
+  height: 100%;
   width: 100%;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
 }
 
 .cardContainer {
-  /* background-color: yellow; */
   display: flex;
   justify-content: center;
   height: 100vh;
   gap: 20px;
-}
-
-.smallContainer{
-  background-color: green;
 }
 
 .card {
@@ -49,75 +21,82 @@ background-color: aqua;
   border-radius: 10px;
   font-size: 21px;
   text-align: center;
-  white-space:wrap;
+  white-space: wrap;
   margin-top: 2em;
   word-wrap: break-word;
   -webkit-animation: fadein 5s;
-     -moz-animation: fadein 5s; 
-      -ms-animation: fadein 5s; 
-       -o-animation: fadein 5s; 
-          animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -ms-animation: fadein 5s;
+  -o-animation: fadein 5s;
+  animation: fadein 5s;
 }
 
 .iframeContainer {
   width: 100%;
-  /* border-radius: 20px; */
 }
 
-.iframe{
+.iframe {
   width: 100%;
   height: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .textWrapper {
-  /* background-color: aqua; */
   max-width: 100%;
 }
 
-.textWrapper p, .textWrapper a{
-  /* white-space:wrap; */
+.textWrapper p,
+.textWrapper a {
   margin-top: 1em;
-  /* word-wrap: break-word; */
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 @media only screen and (max-width: 1500px) {
   .cardContainer {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-/* flex-direction: column; */
-flex-wrap: wrap;
-    /* background-color: rgb(34, 0, 255); */
-/* width: 80%; */
-  /* height: 100vh; */
+    flex-wrap: wrap;
   }
 
   .card {
@@ -126,80 +105,51 @@ flex-wrap: wrap;
     height: 60vh;
   }
 
-  .iframe{
+  .iframe {
     width: 100%;
     height: 200px;
-
   }
-}  
+}
 
 @media only screen and (max-width: 900px) {
-
-
   .card {
-
     width: 50%;
     height: 50vh;
-
   }
 
-  .iframe{
+  .iframe {
     width: 100%;
     height: 200px;
-
   }
-}  
-
+}
 
 @media only screen and (max-width: 700px) {
-
-
   .card {
-
     width: 70%;
     height: 50vh;
-    /* max-height: 70vh; */
-    /* margin-bottom: 1em; */
-
   }
 
-  .iframe{
+  .iframe {
     width: 100%;
     height: 200px;
-
   }
-}  
-
+}
 
 @media only screen and (max-width: 500px) {
-
-
   .card {
-
     width: 90%;
     margin-bottom: 1em;
-
-
   }
 
-  .iframe{
+  .iframe {
     width: 100%;
     height: 200px;
-
   }
-}  
-
-
-
+}
 
 @media only screen and (max-width: 370px) {
-
-
   .card {
     overflow-y: scroll;
     scrollbar-width: 1px;
-
   }
-}  
-
-
+}

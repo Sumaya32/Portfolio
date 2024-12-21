@@ -10,12 +10,12 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
 
 const metadata = {
   title: "Sumaya MA webdeveloper",
@@ -25,36 +25,23 @@ const metadata = {
 
 export default function RootLayout({ children }) {
   const patheName = usePathname();
-console.log(patheName)
 
-  if (patheName === "/") {
     return (
       <html lang="en">
         <title>{metadata.title}</title>
         <meta content={metadata.description} />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div >
-          {children}
-          </div>
+          <div>
+          {patheName === "/" ? children 
+          : 
+          <>
+            <Header /> 
+            {children}
+          </>
+          }
+        </div>
         </body>
       </html>
     );
-  } 
-
- else if (patheName === "/about" || "/resume" || "/projects" || "/contact") {
-    return (
-      <html lang="en">
-        <title>{metadata.title}</title>
-        <meta content={metadata.description} />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div >
-        <Header /> 
-          {children}
-          </div>
-        </body>
-      </html>
-    );
-  } 
 }
