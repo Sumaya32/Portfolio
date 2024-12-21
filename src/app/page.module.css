@@ -15,6 +15,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.1) */
 }
 
 .cardContainer {
@@ -43,6 +44,7 @@
   align-items: center;
   justify-content: center;
   background-color: #6EACDA;
+  background-color: rgb(77, 111, 160);
   width: 17vw;
   height: 20vh;
   position: relative;
@@ -57,6 +59,9 @@
   width: 10px;
   aspect-ratio: 1;
   background-color: rgb(21, 105, 222);
+  background-color: rgb(53, 91, 145);
+  background-color: rgb(70, 110, 167);
+
   border-radius: 50%;
   top: 1%;
   transform: translateX(-50%);
@@ -70,6 +75,7 @@
   width: 1px;
   height: 50vh;
   background-color: rgb(85, 150, 241);
+  background-color:  rgb(78, 85, 110);
   transform: translateY(5px);
 }
 

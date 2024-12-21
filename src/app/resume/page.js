@@ -8,17 +8,14 @@ export default function Resume() {
         <div className={`${styles.card} ${styles.cardOne}`}>
            <h2>knowledge of programming languages ​​and frameworks</h2>
          <ul>
-          <il>React</il>
-          <il>React Native</il>
-          <il>TypeScript</il>
-          <il></il>
-          <il></il>
-          <il></il>
-          <il></il>
+          <li>React</li>
+          <li>React Native</li>
+          <li>TypeScript</li>
+          
          </ul>
         </div>
-        <div className={`${styles.card} ${styles.cardTwoMove}`}>test2</div>
-        <div className={`${styles.card} ${styles.cardThreeMove}`}>test3</div>
+        <div className={`${styles.card} ${styles.cardTwo}`}>test2</div>
+        <div className={`${styles.card} ${styles.cardThree}`}>test3</div>
     
       </div>
     </div>

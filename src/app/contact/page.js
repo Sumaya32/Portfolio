@@ -19,18 +19,20 @@ export default function Contact() {
    };
   
     return (
-
     <div className={styles.container}>
         <div className={styles.smallContainer}>
             <h2>Keep in touch</h2>
-            <div className={`${styles.wrapper }`}>
-                <div className={` ${styles.lid} ${isclosed && !letterIsOut ? styles.closed : styles.opened } `}></div>        
+            <div className={styles.test}>
+          <div className={`${styles.wrapper }`}>
+
+<div className={` ${styles.lid} ${isclosed && !letterIsOut ? styles.closed : styles.opened } `}></div>        
                 <div className={styles.envelope}></div>
                 <div className={`${ styles.letter} ${letterIsOut ? styles.out : ""}`}>
                     <Form letterIsOut={letterIsOut}/>
                 </div> 
-      </div>
+</div>
          <Button isclosed={isclosed} openEnvelop={openEnvelop} buttonTitleOne={"Open the envelope"} buttonTitleTwo={"Close the envelope"} buttonTitleThree={"Send"} handleClick={handleClick}/>
+         </div>
     </div>
   </div>
     );

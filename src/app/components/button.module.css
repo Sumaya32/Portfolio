@@ -2,7 +2,7 @@
     display: flex;
     gap: 1em;
     position: relative;
-    top: 33%;
+    top: 35%;
   }
   
   .btn {
@@ -18,5 +18,26 @@
   
   .btn:hover{
     background-color: rgb(106, 109, 122);
+  }
+
+
+  @media only screen and (max-width: 430px) {
+    .btnContaner{
+      display: flex;
+    flex-direction: column;
+    }
+  }
+
+
+  @media only screen and (min-width:430px) and (max-width:930px){
+    .btnContaner{
+top: 30%;
+    }
+  }
+  
+  @media only screen and (min-width:420px) and (max-width: 620px){
+    .btnContaner{
+top: 25%;
+    }
   }
   
